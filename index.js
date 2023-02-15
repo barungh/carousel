@@ -1,6 +1,6 @@
 let users = [
   {
-    "name" : "Jasmin P.",
+    "name" : "Lima s .",
     "designation": "Assistant Teacher",
     "pic": "./pictures/pic1.jpg",
     "testimonial": "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia."
@@ -16,8 +16,22 @@ let users = [
     "designation": "Marketing Head",
     "pic": "./pictures/pic3.jpg",
     "testimonial": "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia."
+  },
+  {
+    "name" : "Olivia",
+    "designation" : "* Model ",
+    "pic" : "./pictures/pic4.jpg",
+
+    "testimonial" : "I had such great fun modeling. Trying on the wedding dresses was just superb! It was a dream assignment! I am not the 'standard' shape for modelling as I am curvy and never imagined I could do something like this but in fact my shape was just what the",
+  },
+  {
+    "name" : "Amelia. ",
+      "designation" : "* Coder ",
+      "pic" : "./pictures/pic5.jpg",
+      "testimonial" : "When I was thinking about writing this blog post, my first thought was that I’m not the right person to write about being a woman in tech. I’ve never understood gender roles so I was afraid that my point of view would be somehow wrong."
   }
 ]
+
 
 // DRY = Don't Repeat Yourself
 function thedots (idx) {
