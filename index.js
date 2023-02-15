@@ -28,6 +28,19 @@ let users = [
     "designation" : "Sales Boy",
     "pic" : "./pictures/pic5.png",
     "testimonial" : "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."
+  },
+  {
+    "name" : "Olivia",
+    "designation" : "* Model ",
+    "pic" : "./pictures/pic6.jpg",
+
+    "testimonial" : "I had such great fun modeling. Trying on the wedding dresses was just superb! It was a dream assignment! I am not the 'standard' shape for modelling as I am curvy and never imagined I could do something like this but in fact my shape was just what the",
+  },
+  {
+    "name" : "Amelia. ",
+      "designation" : "* Coder ",
+      "pic" : "./pictures/pic7.jpg",
+      "testimonial" : "When I was thinking about writing this blog post, my first thought was that I’m not the right person to write about being a woman in tech. I’ve never understood gender roles so I was afraid that my point of view would be somehow wrong."
   }
 ]
 
