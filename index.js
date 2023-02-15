@@ -16,6 +16,18 @@ let users = [
     "designation": "Marketing Head",
     "pic": "./pictures/pic3.jpg",
     "testimonial": "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia."
+  },
+  {
+    "name" : "Rabi M.",
+    "designation" : "Sales Boy",
+    "pic" : "./pictures/pic4.jpg",
+    "testimonial" : "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."
+  },
+  {
+    "name" : "Jit R.",
+    "designation" : "Sales Boy",
+    "pic" : "./pictures/pic5.png",
+    "testimonial" : "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."
   }
 ]
 
