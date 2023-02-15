@@ -19,23 +19,63 @@ let users = [
   }
 ]
 
-let idx = 0;
-let p = document.getElementById("dp")
-p.src = users[idx]["pic"];
+// DRY = Don't Repeat Yourself
+function thedots (idx) {
+  let dots = document.querySelector(".dots");
+  dots.innerHTML = '';
 
-document
-  .querySelector(".btn--right")
-  .addEventListener('click', () => {
-    console.log(users.length);
-    console.log(idx);
+  for (const [index, item] of users.entries()) {
+    let btn = document.createElement('button');
+    btn.className = "dot";
+    if (index === idx) {
+      btn.classList.add('dot--active');
+    }
+    dots.append(btn);
+  }
+}
 
-    idx = idx+1;
-    if (idx === users.length) {
-      idx = 0;
+function main () {
+  let ta = document.querySelector('.testimonial-author')
+  let tj = document.querySelector('.testimonial-job')
+  let tt = document.querySelector('.testimonial-text')
+
+  let idx = 0;
+
+  let p = document.getElementById("dp")
+  p.src = users[idx]["pic"];
+  ta.textContent = users[idx]["name"];
+  tj.textContent = users[idx]["designation"];
+  tt.textContent = users[idx]["testimonial"];
+
+  thedots(idx);
+
+
+  document.querySelector(".btn--left").addEventListener('click', () => {
+    idx = idx-1;
+    if (idx === -1) {
+      idx = users.length-1;
     }
     p.src = users[idx]["pic"];
-    document.querySelector('.testimonial-author').textContent = users[idx]["name"];
-    document.querySelector('.testimonial-job').textContent = users[idx]["designation"];
-  })
+    ta.textContent = users[idx]["name"];
+    tj.textContent = users[idx]["designation"];
+    tt.textContent = users[idx]["testimonial"];
+    thedots(idx);
+  });
 
+  document
+    .querySelector(".btn--right")
+    .addEventListener('click', () => {
+      idx = idx+1;
+      if (idx === users.length) {
+        idx = 0;
+      }
+      p.src = users[idx]["pic"];
+      ta.textContent = users[idx]["name"];
+      tj.textContent = users[idx]["designation"];
+      tt.textContent = users[idx]["testimonial"];
+      thedots(idx);
+    });
+}
+
+main();
 
