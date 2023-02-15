@@ -28,6 +28,12 @@ let users = [
     "designation" : "Sales Boy",
     "pic" : "./pictures/pic5.png",
     "testimonial" : "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."
+  },
+  {
+        "name" : "Shubo R.",
+    "designation" : "Sales Boy",
+    "pic" : "./pictures/pic6.jpg",
+    "testimonial" : "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."
   }
 ]
 
